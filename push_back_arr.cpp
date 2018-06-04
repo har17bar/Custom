@@ -10,6 +10,15 @@ void push_back(int *&arr,int &size,const int value){
      arr=newarr;
      size++;
 }
+void pop_back(int*&arr,int&size){
+    size=size-1;
+    int * newarr=new int(size);
+    for(int i =0; i<size;i++){
+        newarr[i]=arr[i];
+    }
+    delete [] arr;
+    arr=newarr; 
+}
 
 int main()
 {
@@ -22,6 +31,10 @@ int main()
     }
     push_back(arr,size,15);
     cout<<endl<<"new"<<endl;
+    for(int j=0;j<size;j++){
+        cout<<arr[j]<<"\t";
+    }
+    pop_back(arr,size);
     for(int j=0;j<size;j++){
         cout<<arr[j]<<"\t";
     }
