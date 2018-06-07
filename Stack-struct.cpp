@@ -93,16 +93,15 @@ void push(Stack  &s_obj, int number)
 	             s_obj.MinstackArr[s_obj.MinTop]=number;
 	        }
 	    }
-	    else
-	    {
+	    else{
 	        s_obj.MinTop++;
 	        s_obj.MinstackArr[s_obj.MinTop]=number;
 	    }
-		s_obj.top++;
-		s_obj.stackarr[s_obj.top] = number;
+	    s_obj.top++;
+	    s_obj.stackarr[s_obj.top] = number;
 	}
 	else
-		cout << endl << "Stack is overfloww" << endl;
+	cout << endl << "Stack is overfloww" << endl;
 }
 
 bool stack_is_not_full(Stack const &s_obj)
