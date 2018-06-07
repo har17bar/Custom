@@ -92,7 +92,9 @@ void push(Stack  &s_obj, int number)
 	             s_obj.MinTop++;
 	             s_obj.MinstackArr[s_obj.MinTop]=number;
 	        }
-	    }else{
+	    }
+	    else
+	    {
 	        s_obj.MinTop++;
 	        s_obj.MinstackArr[s_obj.MinTop]=number;
 	    }
